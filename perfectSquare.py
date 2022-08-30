@@ -1,10 +1,8 @@
 import math
 value = input("Enter N: ")
-n_array = []
-i = 1
-while i <= int(value):
-    n_array.append(i)
-    i = i + 1
+n_array = list(range(1,int(value)+1))
+new_array = [math.ceil(((int(value))+1)/2)]
+n_array.pop(new_array[0]-1)
 
 new_array = [math.ceil(((int(value))+1)/2)]
 n_array.pop(new_array[0]-1)
